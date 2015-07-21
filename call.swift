@@ -15,5 +15,6 @@ public func call(command: String) -> Int {
         print(output)
     }
 
+    task.waitUntilExit()
     return Int(task.terminationStatus)
 }
